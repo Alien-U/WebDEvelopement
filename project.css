@@ -1,0 +1,237 @@
+*{
+    margin:0 ;
+    padding:0 ;
+    box-sizing:border-box;
+}
+.logo
+{
+    border-radius: 50%;
+}
+.header
+{
+    min-height:100vh ;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://st2.depositphotos.com/3725083/5485/i/450/depositphotos_54856347-stock-photo-travel-the-world-monument-concept.jpg);
+    background-size: cover;
+    background-position: center;
+}
+ nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 7%;
+} 
+
+ .navlinks li{
+    background-color: #fff;
+    list-style: none;
+    display: inline-block;
+    padding:5px;
+    border-radius:20px;
+    color:#000;
+    cursor:pointer;
+    margin: 10px 30px;
+} 
+.navlinks li a
+{
+  text-decoration: none;
+  color: #fff;
+}
+.register-btn
+{
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.register-btn:hover
+{
+    background-color: aqua;
+    color: white;
+}
+.register-btn:active
+{
+  background-color: gold;
+  color: silver;
+}
+.container{
+    padding: 0 7%;
+}
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+    text-align:center;
+    padding-top: 22%;
+}
+.searchbar
+{
+ background: #fff;
+ width: 70%;
+ margin: 30px auto;
+ padding:6px 10px 6px 30px;
+ border-radius: 20px;
+}
+.searchbar form
+{
+ display: flex;
+ align-items: center;
+ flex-wrap:wrap;
+}
+.searchbar form input
+{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+#search-button
+{
+    background: #ff5361;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.subtitle 
+{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight:500 ;
+    color:#333 ;
+}
+.exclusives
+{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr)) ;
+    grid-gap: 30px;
+}
+.exclusives div img{
+    width: 100%;
+    border-radius: 10px;
+}
+.exclusives div{
+    position: relative;
+}
+.exclusives div span
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    color: white;
+}
+/* -------Tranding places------ */
+.tranding
+{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr)) ;
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+.tranding div img
+{
+    border-radius: 10px;
+    width: 100%;
+}
+.tranding h3
+{
+   font-weight: 600;
+   margin-top: 10px;
+}
+/* call to action */
+.cta
+{
+    margin: 80px 0;
+    background-image:linear-gradient(to right,#3f2321,transparent),url(https://upload.wikimedia.org/wikipedia/commons/b/ba/Sarayu_River_night_view%2C_Ayodhya_001.jpg);
+    background-size:cover ;
+    background-position:center ;
+    border-radius:10px ;
+    color:white ;
+    padding: 5%;
+}
+.cta-btn
+{
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+/* -----------travelers stories------------ */
+.stoties
+{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr)) ;
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+.stoties div img{
+    width: 100%;
+    border-radius: 10px;
+}
+.stoties div
+{
+  position: relative;
+  text-align: center;
+}
+.stoties p{
+    width:80% ;
+    position:absolute ;
+    top:50% ;
+    left:50% ;
+    transform:translate(-50%,-50%) ;
+    color:#fff ;
+    font-size: 26px;
+}
+.start-btn
+{
+    text-decoration: none;
+    background-color: orangered;
+    color: #fff;
+    /* width: 80px; */
+    max-width: 350px;
+    display: block;
+    text-align: center;
+    margin: 60px auto;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 20ppx;
+}
+/* ---------About section----------- */
+.about-msg
+{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+/* -------------footer-------------- */
+.footer
+{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer a
+{
+    margin: 0 10px;
+}
+/* ----------for smallar screen divices----------- */
+@media only screen and(max-width:700px)
+{
+    nav{
+        position:fixed;
+        top: 0;
+        z-index: 100;
+        display: inline-block;
+        width:100%;
+        padding: 100px 7% 0;
+        background: #000;
+        text-align: right;
+    }
+}
